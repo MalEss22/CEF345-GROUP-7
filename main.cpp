@@ -9,7 +9,7 @@ int main()
     {"E","F","G","H"}
     };
     cout<<str;
-/*string A[4]={"dick","ickd","ckdi","kdic"};
+string A[4]={"dick","ickd","ckdi","kdic"};
 string  B="I am a boy";;
 for(string i:A){
     cout<< i<<endl;
@@ -18,7 +18,7 @@ for(string i:A){
     cout <<"The size is :"<<b <<"\n";
     cout<<sizeof(B);
     while(A[i]!='\0')
-/*int num[10]={1,2,3,4,5,4,6,5,7,9};
+int num[10]={1,2,3,4,5,4,6,5,7,9};
 
  for(int i:num){
     cout<<i <<"\n";
@@ -26,7 +26,7 @@ for(string i:A){
  }
  int b=sizeof(num)/sizeof(int);
   cout<<"The size of the array is:"<<b;
- /*char A[4];
+ char A[4];
  for(char i : A){
     cin>>i;
  }
@@ -34,6 +34,6 @@ for(string i:A){
     cout<<i;
  }
  int b=sizeof(A);
- cout<<b;*/
+ cout<<b;
  return 0;
 }
