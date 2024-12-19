@@ -1,15 +1,18 @@
+
 const express = require('express');
    const mysql = require('mysql');
    const bodyParser = require('body-parser');
    const bcrypt = require('bcryptjs');
    const jwt = require('jsonwebtoken');
-
+    const cors = require('cors');
+    require('dotenv').config();
    const app = express();
-   const port = 3306;
-   const secretKey = ''; // Use an environment variable in production
+   const port = 3000;
+   const secretKey = process.env.SECRET_KEY; // Use an environment variable in production
 
    // Middleware
    app.use(bodyParser.json());
+    app.use(cors());
 
    // MySQL connection
    const db = mysql.createConnection({
